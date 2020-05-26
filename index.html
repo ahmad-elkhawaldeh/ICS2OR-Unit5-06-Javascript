@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> my webpage </title>
+    <meta charset="utf-8">
+    <meta name="descirption" content="webpage, with buttons ">
+    <meta name="keywords" content="Mths,website">
+    <meta name="author" content="Ahmad-El-khawaldeh">
+    <meta name="viewport" content="width=device-width,intial-scale1.0">
+   </head>
+        <body> 
+        
+
+    Please  enter my  age: <input type="text" id="num" /><br /><br />
+
+    <input type="button" value="enter" onclick="checkNum()" />
+
+  </body>
+
+    <script>
+           function checkNum()
+           {
+               let myage=16;
+               let answer=parseInt(document.getElementById("num").value);
+               if(answer==myage){
+               alert("You got it right!");
+               }
+               else if(answer < myage){
+                   alert("you guessed too small Try again!");
+               }
+               else if(answer > myage){
+                   alert("You guessed too Big Try again!");
+               }
+               else
+               {
+                   alert("Invalid Number");
+               }
+                  
+           }
+       </script>
